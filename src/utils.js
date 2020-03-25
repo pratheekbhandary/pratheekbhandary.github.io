@@ -13,6 +13,9 @@ export function getRandomInt(max) {
   return Math.floor(Math.random() * Math.floor(max));
 }
 
+export const isChromeMobile = () =>
+  navigator && navigator.userAgent && /Chrome/i.test(navigator.userAgent);
+
 // Opera 8.0+
 export const isOpera = () =>
   (!!window.opr && !!opr.addons) ||

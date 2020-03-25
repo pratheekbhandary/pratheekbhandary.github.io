@@ -4,7 +4,7 @@ import { makeStyles } from "@material-ui/styles";
 import "./App.css";
 import MostlySane from "./Components/MostlySaneAnime";
 import Bubbles from "./Components/BubblesHeader";
-import { isChrome, isFirefox } from "./utils";
+import { isChrome, isFirefox, isChromeMobile } from "./utils";
 
 const useStyles = makeStyles(theme => ({
   app: {
@@ -39,7 +39,10 @@ function App() {
     return () => clearTimeout(timer);
   }, [setLoadtAnimation]);
 
-  const isChromeOrMozilla = useMemo(() => isChrome() || isFirefox(), []);
+  const isChromeOrMozilla = useMemo(
+    () => isChrome() || isFirefox() || isChromeMobile(),
+    []
+  );
 
   if (loadAnimation && isChromeOrMozilla) {
     return (
