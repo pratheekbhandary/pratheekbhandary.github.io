@@ -5,15 +5,27 @@ import React, {
   useEffect,
   useRef
 } from "react";
+import { makeStyles } from "@material-ui/styles";
+
 import { useTheme } from "@material-ui/styles";
 import "./BubbleHeader.css";
 import IntroDescription from "../IntroDescription";
-
+const useStyles = makeStyles(theme => ({
+  wrapper: {
+    display: "flex",
+    height: "100%",
+    width: "100%",
+    flexDirection: "column",
+    justifyContent: "center",
+    alignItems: "center"
+  }
+}));
 export default function Bubbles() {
   const [widthOfAnimation, setWidthOfAnimation] = useState(0);
   const header = useRef(null);
   const centered = useRef(null);
   const theme = useTheme();
+  const classes = useStyles();
 
   useMemo(() => {
     const bArray = [];
@@ -34,11 +46,13 @@ export default function Bubbles() {
   }, [setWidth, widthOfAnimation]);
 
   return (
-    <div className="centered" ref={centered}>
-      <h1 className="bubbles" ref={header}>
-        Heya I'm Pratheek Bhandary
-      </h1>
-      <IntroDescription />
+    <div className={classes.wrapper}>
+      <div className="centered" ref={centered}>
+        <h1 className="bubbles" ref={header}>
+          Heya I'm Pratheek Bhandary
+        </h1>
+        <IntroDescription />
+      </div>
     </div>
   );
 }

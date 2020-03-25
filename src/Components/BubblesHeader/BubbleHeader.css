@@ -8,7 +8,7 @@
 .centered {
   position: relative;
   opacity: 0;
-  animation: bounceIn 1s ease-in 11s forwards;
+  animation: bounceIn 1s ease-in forwards;
   display: flex;
   flex-direction: column;
   justify-content: center;
