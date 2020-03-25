@@ -7,3 +7,7 @@ export function usePrevious(value) {
   });
   return ref.current;
 }
+
+export function getRandomInt(max) {
+  return Math.floor(Math.random() * Math.floor(max));
+}

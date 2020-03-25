@@ -1,14 +1,25 @@
 import React from "react";
+import { makeStyles } from "@material-ui/styles";
+
 import "./App.css";
-// import MasonaryGridProjects from "./Components/MasonaryGridProjects";
-// import SlidePagination from "./Components/SlidePagination";
-// import ProjectList from "./Components/ProjectList";
 import MostlySane from "./Components/MostlySaneAnime";
+
+const useStyles = makeStyles(theme => ({
+  app: {
+    background: theme.currentTheme.background,
+    color: theme.currentTheme.color
+  },
+  "@global": {
+    body: {
+      ...theme.currentTheme
+    }
+  }
+}));
+
 function App() {
+  const classes = useStyles();
   return (
-    <div className="App">
-      {/* <SlidePagination width="100%" components={ProjectList} />
-      <MasonaryGridProjects /> */}
+    <div className={`App ${classes.app}`}>
       <MostlySane />
     </div>
   );

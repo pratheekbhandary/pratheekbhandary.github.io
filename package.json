@@ -1,14 +1,14 @@
 {
   "homepage": "http://pratheekbhandary.github.io/",
   "name": "portfolio",
-  "version": "0.1.0.1",
+  "version": "0.2.0",
   "private": true,
   "dependencies": {
+    "@material-ui/styles": "^4.9.6",
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
     "@testing-library/user-event": "^7.1.2",
     "gh-pages": "^2.2.0",
-    "node-sass": "^4.13.1",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-scripts": "3.4.0",

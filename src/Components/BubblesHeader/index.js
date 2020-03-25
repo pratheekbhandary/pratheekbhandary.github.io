@@ -5,6 +5,7 @@ import React, {
   useEffect,
   useRef
 } from "react";
+import { useTheme } from "@material-ui/styles";
 import "./BubbleHeader.css";
 import IntroDescription from "../IntroDescription";
 
@@ -12,15 +13,15 @@ export default function Bubbles() {
   const [widthOfAnimation, setWidthOfAnimation] = useState(0);
   const header = useRef(null);
   const centered = useRef(null);
+  const theme = useTheme();
 
   useMemo(() => {
     const bArray = [];
     for (let i = 0; i < widthOfAnimation; i++) {
       bArray.push(i);
     }
-    console.log(centered.current);
-    bArray.length && init(centered.current, bArray);
-  }, [widthOfAnimation]);
+    bArray.length && init(centered.current, bArray, theme);
+  }, [theme, widthOfAnimation]);
 
   const setWidth = useCallback(() => {
     setWidthOfAnimation(header.current.offsetWidth);
@@ -46,40 +47,30 @@ const bubbleLifeTime = 10;
 const noOfBubbles = 20;
 var sArray = [4, 6, 8, 10, 12];
 
-function init(centered, bArray) {
+function init(centered, bArray, theme) {
   var bubble;
   centered.childNodes.forEach(x => {
     if ("circle_container" === x.className) {
       centered.removeChild(x);
     }
   });
-  console.log("centered.childElementCount", centered.childElementCount);
   for (var i = 0; i < noOfBubbles; i++) {
-    bubble = createBubble(bArray);
+    bubble = createBubble(bArray, theme);
     centered.appendChild(bubble);
   }
 }
 
-function createBubble(bArray) {
+function createBubble(bArray, theme) {
   var circleContainer = document.createElement("div");
   circleContainer.classList.add("circle_container");
   circleContainer.style.left = randomValue(bArray) + "px";
-  var circle = createCircle();
-  circleContainer.appendChild(circle);
+  circleContainer.style.animationDelay = Math.random() * bubbleLifeTime + "s";
+  var size = randomValue(sArray);
+  circleContainer.style.background = theme.currentTheme.color;
+  circleContainer.style.width = size + "px";
+  circleContainer.style.height = size + "px";
 
   return circleContainer;
-}
-
-function createCircle() {
-  var circle = document.createElement("div");
-  circle.classList.add("circle");
-  circle.style.animationDelay = Math.random() * bubbleLifeTime + "s";
-  var size = randomValue(sArray);
-  circle.style.background = "white";
-  circle.style.width = size + "px";
-  circle.style.height = size + "px";
-
-  return circle;
 }
 
 function randomValue(arr) {

@@ -1,14 +1,10 @@
-.icons-social a {
-  color: #fafafa;
-}
-
-.icons-social a svg path {
-  fill: #fafafa;
-}
-
 ol,
 ul {
   list-style: none;
+}
+
+.icons-social a {
+  color: inherit;
 }
 
 img {
@@ -16,34 +12,14 @@ img {
   height: auto;
 }
 
-/* Typography */
-
-@media (min-width: 576px) {
-  html {
-    font-size: 14px;
-  }
+.icons-social i {
+  font-size: 2em;
 }
 
 @media (min-width: 768px) {
-  html {
-    font-size: 16px;
+  .icons-social i {
+    font-size: 3em;
   }
-}
-
-@media (min-width: 992px) {
-  html {
-    font-size: 18px;
-  }
-}
-
-@media (min-width: 1200px) {
-  html {
-    font-size: 20px;
-  }
-}
-
-.icons-social i {
-  font-size: 3em;
 }
 
 /* Custom Styles */
@@ -54,6 +30,5 @@ img {
 
 .tagline {
   font-family: "Ceviche One", cursive;
-  color: #fff;
   font-size: 1rem;
 }

@@ -1,7 +1,7 @@
 import React from "react";
 
 import { useTransition } from "react-spring";
-import "./Corosal.scss";
+import "./Corosal.css";
 
 export default function Corosal({ index, side, components }) {
   const transitions = useTransition(
