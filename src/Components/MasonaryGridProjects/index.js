@@ -3,8 +3,7 @@ import "./MasonaryGridProjects.css";
 
 export default function MasonaryGridProjects() {
   return (
-    <div className="mason-container ">
-      <h1>Animated Grid</h1>
+    <div className="mason-container">
       <section className="animated-grid">
         <div
           className="card"

@@ -3,7 +3,9 @@
 @import url(https://fonts.googleapis.com/css?family=Mr+Dafoe&display=swap);
 @import url(https://fonts.googleapis.com/css?family=Black+Ops+One&display=swap);
 @import url(https://fonts.googleapis.com/css?family=Kristi&display=swap); */
-@import url(https://fonts.googleapis.com/css?family=Ceviche+One&display=swap);
+@import url("https://fonts.googleapis.com/css?family=Ceviche+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Carter+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
 
 .centered {
   position: relative;
@@ -22,6 +24,7 @@ h1 {
   font-family: "Kristi", cursive;
   font-family: "Mr Dafoe", cursive; */
   font-family: "Ceviche One", cursive;
+  text-shadow: 0px 2px 40px #00000020, 0px 2px 5px #00000030;
   font-size: 5rem;
   margin-bottom: 1rem;
   text-align: center;

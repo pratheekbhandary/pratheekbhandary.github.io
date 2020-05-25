@@ -2,7 +2,7 @@
 import { useRef, useEffect } from "react";
 
 export function usePrevious(value) {
-  const ref = useRef();
+  const ref = useRef(0);
   useEffect(() => {
     ref.current = value;
   });
@@ -27,7 +27,7 @@ export const isFirefox = () => typeof InstallTrigger !== "undefined";
 // Safari 3.0+ "[object HTMLElementConstructor]"
 export const isSafari = () =>
   /constructor/i.test(window.HTMLElement) ||
-  (function(p) {
+  (function (p) {
     return p.toString() === "[object SafariRemoteNotification]";
   })(
     !window["safari"] ||

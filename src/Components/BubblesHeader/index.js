@@ -17,7 +17,21 @@ const useStyles = makeStyles(theme => ({
     width: "100%",
     flexDirection: "column",
     justifyContent: "center",
-    alignItems: "center"
+    alignItems: "center",
+    clipPath: "polygon(50% 0%, 100% 0%, 100% 77%, 50% 100%, 0 65%, 0 0)",
+    background: "#f75847",
+    animation: `$scroll-down 2s infinite`
+  },
+  "@keyframes scroll-down": {
+    "0%": {
+      clipPath: "polygon(50% 0%, 100% 0%, 100% 77%, 50% 100%, 0 65%, 0 0)"
+    },
+    "50%": {
+      clipPath: "polygon(50% 0%, 100% 0%, 100% 77%, 50% 94%, 0 65%, 0 0)"
+    },
+    "100%": {
+      clipPath: "polygon(50% 0%, 100% 0%, 100% 77%, 50% 100%, 0 65%, 0 0)"
+    }
   }
 }));
 export default function Bubbles() {

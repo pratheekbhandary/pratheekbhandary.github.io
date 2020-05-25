@@ -1,6 +1,7 @@
 import React, { useMemo } from "react";
 import { ThemeProvider } from "@material-ui/styles";
-import themeCollection from "./theme/theme.json";
+import colorCombos from "./theme/colorCombos.json";
+import themes from "./theme/theme.json";
 import ReactDOM from "react-dom";
 import "./index.css";
 import * as serviceWorker from "./serviceWorker";
@@ -9,14 +10,15 @@ import { getRandomInt } from "./utils";
 
 function Root() {
   const theme = useMemo(() => {
-    const allThemes = Object.keys(themeCollection.themes);
+    const allThemes = Object.keys(colorCombos);
     const randomThemePos = getRandomInt(allThemes.length);
-    const currentTheme = themeCollection.themes[allThemes[randomThemePos]];
+    const currentTheme = colorCombos[allThemes[randomThemePos]];
     return {
       palette: {
-        type: false ? "dark" : "light"
+        type: false ? "dark" : "light",
       },
-      currentTheme
+      currentTheme,
+      ...themes,
     };
   }, []);
 
