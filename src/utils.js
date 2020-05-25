@@ -42,4 +42,5 @@ export const isEdge = () => !isIE && !!window.StyleMedia;
 
 // Chrome 1 - 71
 export const isChrome = () =>
-  !!window.chrome && (!!window.chrome.webstore || !!window.chrome.runtime);
+  (!!window.chrome && (!!window.chrome.webstore || !!window.chrome.runtime)) ||
+  window?.navigator?.vendor === "Google Inc.";
