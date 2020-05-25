@@ -1,0 +1,58 @@
+{
+  "jobs": [
+    {
+      "company": "Payoda Technologies Inc",
+      "jobTitle": "Software Developer",
+      "duration": { "from": "April 2019", "to": "Present" },
+      "description": [
+        "Developing a web application Queue View which focused on case management for Support Engineer. Email service is the core mechanism.",
+        "Building a system to parse and analyze data from the show tech files (which are basically logs from switches developed by Arista)."
+      ],
+      "techUsed": [
+        "React (redux, relay, saga)",
+        "Typescript",
+        "GraphQl",
+        "Golang (gqlgen, sqlboiler)",
+        "Python",
+        "Chalice",
+        "Amazon Web Services"
+      ]
+    },
+    {
+      "company": "Infosys",
+      "jobTitle": "Technology Analyst",
+      "duration": { "from": "Aug 2015", "to": "Apr 2019" },
+      "description": [
+        "Working as a developer for Allstate Insurance. In this project, I was closely working with the clients, practicing Agile methodologies, building a Single Page Application (SPA). Also following Test Driven Development."
+      ],
+      "techUsed": ["React", "Redux", "Typescript", "SCSS", "Jest, Enzyme"]
+    },
+    {
+      "company": "Aptean",
+      "jobTitle": "Quality Assurance Intern",
+      "duration": { "from": "Feb 2015", "to": "Aug 2015" },
+      "description": [
+        "My responsibility was to study a ERP application which mainly focused on inventory management, food processing, keeping track of production and finished goods. Our app took care of all the processes from raw material to its finished product. I had on job training for 2 months to study the app which helped me understand the software development life cycle, Black Testing concepts. Then I worked on enhancement stories were I had exposure to regression testing, test case creation, bug identification and tools like Team Foundation Server."
+      ],
+      "techUsed": ["Blackbox Testing", "TFS", "ERP"]
+    },
+    {
+      "company": "NMAMIT Nitte",
+      "jobTitle": "Studying Engineering",
+      "duration": { "from": "June 2011", "to": "June 2015" },
+      "description": [
+        "Studied Electronincs & Communication with focus on Programming languages, Processors, Digital Communication"
+      ]
+    },
+    {
+      "company": "Vidyodaya PU College",
+      "jobTitle": "Studying ComputerScience",
+      "duration": { "from": "June 2009", "to": "June 2011" }
+    },
+    {
+      "company": "Jawahar Navodaya Vidyalaya",
+      "jobTitle": "Mathematics, Physics",
+      "duration": { "from": "June 2005", "to": "June 2009" }
+    }
+  ]
+}

@@ -1,44 +1,19 @@
 {
-  "themes": {
-    "greenBlackTheme": {
-      "background": "rgb(204, 255, 0)",
-      "color": "black"
-    },
-    "pinkTheme": {
-      "background": "rgb(206, 165, 173)",
-      "color": "rgb(204, 255, 0)"
-    },
-    "blueTheme": {
-      "background": "rgb(206, 165, 173)",
-      "color": "rgb(204, 255, 0)"
-    },
-    "redTheme": {
-      "background": "rgb(112, 170, 188)",
-      "color": "rgb(204, 255, 0)"
-    },
-    "redBlackTheme": {
-      "background": "black",
-      "color": "rgb(204, 255, 0)"
-    },
-    "blueWhiteTheme": {
-      "background": "black",
-      "color": "rgb(204, 255, 0)"
-    },
-    "blueRedTheme": {
-      "background": "#a6d1c9",
-      "color": "#e83c38"
-    },
-    "pinkBlackTheme": {
-      "background": "#f4c4c4",
-      "color": "#282b29"
-    },
-    "blueBlackTheme": {
-      "background": "#282b29",
-      "color": "#a6d1c9"
-    }
+  "fonts": {
+    "header": "'Carter One', cursive",
+    "body": "'Lato', sans-serif"
   },
-  "currentTheme": {
-    "background": "rgb(204, 255, 0)",
-    "color": "black"
+  "otherPages": {
+    "icons": {
+      "color": "#5efc8d"
+    },
+    "buttons": {
+      "text": "#333c42",
+      "lightColor": "#1AD072",
+      "color": "#16bb64",
+      "darkColor": "#259a4b",
+      "border": "#302c3d",
+      "shadow": "#03380e"
+    }
   }
 }

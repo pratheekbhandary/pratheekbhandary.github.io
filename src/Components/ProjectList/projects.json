@@ -1,0 +1,79 @@
+{
+  "projects": [
+    {
+      "name": "Redux Middleware for handling socket messages",
+      "repo": [
+        "https://github.com/pratheekbhandary/redux-middleware-socket-handler"
+      ],
+      "image": "https://github.com/pratheekbhandary/redux-middleware-socket-handler/blob/master/ChatBox.PNG",
+      "date": "25 Mar 2019",
+      "description": "Redux is the popular state management library used with React. This project helped me explore the creation of a middleware for redux. The middleware encapsulates the socket io component by listening to particular actions and converting it to respective socket io commands (messages).",
+      "techUsed": ["React", "Redux", "socket.io"]
+    },
+    {
+      "name": "ImageGrid is a Instagram clone",
+      "repo": ["https://github.com/pratheekbhandary/ImageGrid-Instagram"],
+      "image": "",
+      "date": "Feb 2019",
+      "description": "This is a weekend project that helped me explore more styling with SCSS.",
+      "techUsed": ["React", "Redux", "SCSS"]
+    },
+    {
+      "name": "FaceGram - Simple image store with searh filter",
+      "repo": ["https://github.com/pratheekbhandary/VlocityProject"],
+      "image": "https://res.cloudinary.com/pratheekbhandary/image/upload/q_35/v1585484560/ProjectScreenshots/FireBase_Tryout_og70r7.png",
+      "date": "June 2018",
+      "description": "A normal image display portal. This was a project for a particular company to show case my skills in web development and deployment.",
+      "deployedAt": "https://facegram-c047d.firebaseapp.com/",
+      "techUsed": ["React", "Redux", "Bootstrap", "Firebase"]
+    },
+    {
+      "name": "Hacathon Portal",
+      "repo": [
+        "https://github.com/pratheekbhandary/hackathon-portal-ui",
+        "https://github.com/pratheekbhandary/hackathon-portal-api"
+      ],
+      "image": "",
+      "date": "Dec 2018",
+      "description": "Its a portal for participants to register and submit their ideas and also to handle the first level of screening. This project was an internal portal created for my colleges in Infosys (Allstate). Basically this collects user data and also the participants have to upload a file with a detailed description of their ideas. Then these ideas are reviewed and ranked. This was a team effort and my first interaction with Typescript. This repo does not have the complete code as some parts lie in Infosys GitLab.",
+      "deployedAt": null,
+      "techUsed": [
+        "React",
+        "Redux",
+        "Typescript",
+        "multer",
+        "express",
+        "mongoDb",
+        "Bootstrap",
+        "LDAP"
+      ]
+    },
+    {
+      "name": "Persistant memory using IndexedDb",
+      "repo": ["https://github.com/pratheekbhandary/IndexedDB"],
+      "image": "",
+      "date": "Nov 2017",
+      "description": "This project is a replica of one of the tools that I created in Infosys to save the state of the React-Redux app. The major problem I faced while developing an application for Insurance Agents was that it had a pretty bad developer experience when it came to unit testing. I had to fill in hundreds of fields to test one scenario. This hack solved the problem by saving the Redux state in Indexed DB and fetches it when required. It's particularly helpful for testing many use cases without filling in much of the data. Local storage is an ideal solution for smaller apps but the project that I was working in Infosys had huge JSON and local storage was only capable of storing 5 of those objects. Hence Indexed DB saved our day by capturing the state of the applications across reloads for testing purposes.",
+      "deployedAt": null,
+      "techUsed": ["React", "Redux", "IndexDB"]
+    },
+    {
+      "name": "Chat app with Socket Io",
+      "repo": ["https://github.com/pratheekbhandary/SocketIoChatApp"],
+      "image": "",
+      "date": "Nov 2018",
+      "description": "This project is as the name suggests is a chat app using React, Express and Socket IO. Its incomplete but I had a sharp learning curve where I got to explore sockets and express.",
+      "deployedAt": null,
+      "techUsed": ["React", "Redux", "Express", "SocketIO"]
+    },
+    {
+      "name": "Data Driven Food Courts",
+      "repo": ["https://github.com/pratheekbhandary/data-driven-food-courts"],
+      "image": "",
+      "date": "Nov 2018",
+      "description": "This is a Hackathon project. Food Ordering tool which also focused on food waste management. Along with developing a mobile app to order food and a web app to receive orders. This was phase one of the app and as part of phase 2, we demonstrated the use of capturing data from order history and wastage quantity to develop an algorithm that would then predict the approximate orders for any given day and minimize wastage.",
+      "deployedAt": null,
+      "techUsed": ["React", "React Native", "Redux", "FireStore"]
+    }
+  ]
+}
