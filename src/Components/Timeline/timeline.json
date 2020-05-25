@@ -38,7 +38,7 @@
     },
     {
       "company": "NMAMIT Nitte",
-      "jobTitle": "Studying Engineering",
+      "jobTitle": "Bachelor of Engineering",
       "duration": { "from": "June 2011", "to": "June 2015" },
       "description": [
         "Studied Electronincs & Communication with focus on Programming languages, Processors, Digital Communication"
@@ -46,7 +46,7 @@
     },
     {
       "company": "Vidyodaya PU College",
-      "jobTitle": "Studying ComputerScience",
+      "jobTitle": "Studied Computer Science",
       "duration": { "from": "June 2009", "to": "June 2011" }
     },
     {

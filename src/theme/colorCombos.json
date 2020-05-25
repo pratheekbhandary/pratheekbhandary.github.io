@@ -23,10 +23,6 @@
     "background": "black",
     "color": "rgb(204, 255, 0)"
   },
-  "blueRedTheme": {
-    "background": "#a6d1c9",
-    "color": "#e83c38"
-  },
   "pinkBlackTheme": {
     "background": "#f4c4c4",
     "color": "#282b29"
