@@ -4,6 +4,6 @@
   status = 200
   
   [[redirects]]
-  from = "/sitemap"
+  from = "/test"
   to = "/"
   status = 200
