@@ -1,0 +1,9 @@
+[[redirects]]
+  from = "/sitemap"
+  to = "https://www.datocms-assets.com/55045/1631373511-sitemap.xml"
+  status = 200
+  
+  [[redirects]]
+  from = "/sitemap"
+  to = "/"
+  status = 200
