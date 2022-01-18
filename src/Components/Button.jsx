@@ -60,7 +60,7 @@ const useStyles = makeStyles((theme) => ({
 const Button = ({ children, link }) => {
   const classes = useStyles();
   return (
-    <a href={link}>
+    <a href={link} target="_blank">
       <button className={classes.button}>{children}</button>
     </a>
   );
