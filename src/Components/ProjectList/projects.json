@@ -1,6 +1,66 @@
 {
   "projects": [
     {
+      "name": "Appointment Notifier",
+      "repo": [
+        "https://github.com/pratheekbhandary/ireland_jobhunt/blob/main/README.md"
+      ],
+      "image": "https://github.com/pratheekbhandary/redux-middleware-socket-handler/blob/master/ChatBox.PNG",
+      "date": "22 Dec 2021",
+      "description": "Application to check for appointments availability as a CRON task and trigger mobile and discord notifications.",
+      "techUsed": [
+        "Cron",
+        "Webhooks",
+        "Discord apis",
+        "IFTTT webhooks",
+        "ngrok",
+        "Auto fill",
+        "AWS EC2",
+        "TOR"
+      ]
+    },
+    {
+      "name": "NoteBot",
+      "repo": ["https://github.com/pratheekbhandary/notebot"],
+      "image": "https://github.com/pratheekbhandary/redux-middleware-socket-handler/blob/master/ChatBox.PNG",
+      "date": "2 Oct 2020",
+      "description": "Web application to take notes during lectures. It automatically detects audio using hark, recordrtc and transcribes using Google STT.",
+      "techUsed": [
+        "React",
+        "Golang",
+        "Google cloud SDK",
+        "Node.js",
+        "recordrtc",
+        "hark"
+      ]
+    },
+    {
+      "name": "Portfolio",
+      "repo": [
+        "https://github.com/pratheekbhandary/pratheekbhandary.github.io"
+      ],
+      "image": "https://github.com/pratheekbhandary/redux-middleware-socket-handler/blob/master/ChatBox.PNG",
+      "date": "5 March 2020",
+      "description": "Portfolio website with emphasis on using CSS and JS animations. Inspiration for this webpage was Indian youtuber `Mostly Sane` introductory shot. All animations in this page are handcrafted.",
+      "techUsed": ["React", "CSS", "No animation library used"]
+    },
+    {
+      "name": "Mine sweeper",
+      "repo": ["https://github.com/pratheekbhandary/mine-sweeper"],
+      "image": "https://github.com/pratheekbhandary/redux-middleware-socket-handler/blob/master/ChatBox.PNG",
+      "date": "8 April 2020",
+      "description": "Recreating the first computer game I played in my father's office computer.",
+      "techUsed": ["React"]
+    },
+    {
+      "name": "JWT Authentication Tryout",
+      "repo": ["https://github.com/pratheekbhandary/jwt-tryout"],
+      "image": "https://github.com/pratheekbhandary/redux-middleware-socket-handler/blob/master/ChatBox.PNG",
+      "date": "5 July 2020",
+      "description": "Playing around with jwt based Authentication. Creating backend services to register, login, logout, authenticate and refresh tokens.",
+      "techUsed": ["Javascript", "jsonwebtoken", "bcrypt"]
+    },
+    {
       "name": "Redux Middleware for handling socket messages",
       "repo": [
         "https://github.com/pratheekbhandary/redux-middleware-socket-handler"

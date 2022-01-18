@@ -1,12 +1,40 @@
 {
   "jobs": [
     {
+      "company": "Cimpress India",
+      "jobTitle": "Senior Software Developer",
+      "duration": { "from": "April 2021", "to": "November 2021" },
+      "description": [
+        "Contributed to Storefront Solution which offers Cimpress's businesses a platform to onboard new resellers and easily manage them by setting-up completely personalized e–commerce sites dynamically.",
+        "Created a library over existing auth-APIs to generate session-based authentication using cookies. Also integrated the complete authentication flow.",
+        "Single-handedly developed a service to generate and update sitemap/robot.txt using Express.js, Netlify APIs and persisted in S3, with features like white labeling slugs and web-hook integration",
+        "Integrated features like cookie consent, Gitlab feature flag.",
+        "Converted client-side pagination to server-side, improving initial page load by 5x."
+      ],
+      "techUsed": [
+        "React",
+        "Typescript",
+        "SEO (Slugs, Sitemaps, Robots.txt)",
+        "GraphQl",
+        "Dato CMS",
+        "AWS (Lambda, EC2, DynamoDB)",
+        "Payment Integrations",
+        "Session based authentication",
+        "Node.js",
+        "Express handlebars"
+      ]
+    },
+    {
       "company": "Payoda Technologies Inc",
       "jobTitle": "Software Developer",
-      "duration": { "from": "April 2019", "to": "Present" },
+      "duration": { "from": "April 2019", "to": "April 2021" },
       "description": [
         "Developing a web application Queue View which focused on case management for Support Engineer. Email service is the core mechanism.",
-        "Building a system to parse and analyze data from the show tech files (which are basically logs from switches developed by Arista)."
+        "Building a system to parse and analyze data from the show tech files (which are basically logs from switches developed by Arista).",
+        "Implemented GraphQl APIs, using Gqlgen library and SQLBoiler (Postgres ORM).",
+        "Designed home page and tasks page using React-Relay and TypeScript. With features like real-time updates to emulate subscriptions on active tabs and parsing uploaded files in web-worker.",
+        "Illustrated network graph of the device using D3.js force simulation graphs and moved complex path calculation into a web-worker, making the network graph interactive, a key feature in the app.",
+        "Developed a feature to hash files in the browser using the WASM library to avoid duplicate uploads."
       ],
       "techUsed": [
         "React (redux, relay, saga)",
