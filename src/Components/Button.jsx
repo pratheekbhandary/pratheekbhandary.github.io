@@ -60,6 +60,7 @@ const useStyles = makeStyles((theme) => ({
 const Button = ({ children, link }) => {
   const classes = useStyles();
   return (
+    // eslint-disable-next-line react/jsx-no-target-blank
     <a href={link} target="_blank">
       <button className={classes.button}>{children}</button>
     </a>
