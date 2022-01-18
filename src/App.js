@@ -8,6 +8,7 @@ import SlidePagination from "./Components/SlidePagination";
 import ProjectList from "./Components/ProjectList";
 import { isChrome, isFirefox, isChromeMobile } from "./utils";
 import Timeline from "./Components/Timeline";
+import Button from "./Components/Button";
 
 const useStyles = makeStyles((theme) => ({
   app: {
@@ -37,6 +38,12 @@ const useStyles = makeStyles((theme) => ({
       scrollSnapStop: "always",
     },
   },
+  downloadResumeButton: {
+    position: "fixed",
+    top: "10px",
+    right: "10px",
+    zIndex: 10,
+  },
 }));
 
 function App() {
@@ -64,17 +71,24 @@ function App() {
   }
 
   return (
-    <div className={`App ${classes.app} ${classes.yMandatory}`}>
-      {loadAnimation && (
-        <div className={classes.note}>
-          You are missing out! Please use Chrome or Mozilla to witness the
-          magic!!
-        </div>
-      )}
-      <Bubbles />
-      <SlidePagination width="100%" components={ProjectList} />
-      <Timeline />
-    </div>
+    <>
+      <div className={classes.downloadResumeButton}>
+        <Button link="https://res.cloudinary.com/pratheekbhandary/image/upload/v1642468168/Resume/Pratheek_Bhandary_Dublin_rjivk7.pdf">
+          Resume
+        </Button>
+      </div>
+      <div className={`App ${classes.app} ${classes.yMandatory}`}>
+        {loadAnimation && (
+          <div className={classes.note}>
+            You are missing out! Please use Chrome or Mozilla to witness the
+            magic!!
+          </div>
+        )}
+        <Bubbles />
+        <SlidePagination width="100%" components={ProjectList} />
+        <Timeline />
+      </div>
+    </>
   );
 }
 
